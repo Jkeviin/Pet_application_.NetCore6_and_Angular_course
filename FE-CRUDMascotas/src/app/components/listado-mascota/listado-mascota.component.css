@@ -1,0 +1,37 @@
+table {
+    width: 100%;
+  }
+
+td, th {
+    width: 15%;
+  }
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.delete{
+  cursor: pointer;
+  color: #e15639;
+}
+
+.edit{
+  cursor: pointer;
+  color: #3f51b5;
+}
+
+.search{
+  cursor: pointer;
+}
+
+.agregar{
+  font-size: 12px;
+  line-height: 30px;
+  /* Color Agregar Verde */
+  background-color: #4caf50;
+}

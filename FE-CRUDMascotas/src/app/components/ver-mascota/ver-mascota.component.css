@@ -1,0 +1,31 @@
+.card{
+    margin-top: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.container{
+    max-width: 30%;
+    margin: 0 auto;
+}
+
+.container_imagen{
+    width: 100%;
+    min-height: 200px;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+}
+
+img.mat-card-image{
+    border-radius: 2px;
+    width: 80%;
+    height: 80%;
+    margin-bottom: 0;
+    /*propiedadimagen*/object-fit: cover;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+

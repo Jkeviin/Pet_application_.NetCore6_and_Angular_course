@@ -1,0 +1,24 @@
+<div class="title">
+    <h1>Ver MASCOTA</h1>
+</div>
+<app-spinner *ngIf="loading"></app-spinner>
+<div *ngIf="mascota != null" class="container">
+    <mat-card class="card">
+        <mat-card-title>{{mascota.nombre}}</mat-card-title>
+        <mat-card-content>
+            <!-- Ya que el objeto no tiene imagen, traer una al azar pequeña-->
+            <div class="container_imagen">
+                <!-- Para que la imagen carge rapido:
+                https://www.npmjs.com/package/ngx-image-cropper -->
+                <img mat-card-image src="https://picsum.photos/1600/800?random=2" alt="Photo of a Shiba Inu">
+            </div>
+            <p><strong>Raza:</strong> {{mascota.raza}} </p>
+            <p><strong>Color:</strong> {{mascota.color}} </p>
+            <p><strong>Peso:</strong> {{mascota.peso}} Kgs</p>
+            <p><strong>Edad:</strong> {{mascota.edad}} Años </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button routerLink="/listMascotas" mat-raised-button>Volver</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Listado de Mascotas</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="mat-typography">
+  <app-root></app-root>
+
+  <!--
+    Terminos de Backend
+  En ASP.NET un automapper es un objeto que se encarga de mapear un objeto de un tipo a otro tipo.
+
+  El DTO es un objeto que se utiliza para transportar datos entre diferentes capas de la aplicación.
+
+  La diferencia entre DTO y autoMapper en ASP.NET es que el autoMapper se utiliza para mapear objetos de un tipo a otro tipo, mientras que el DTO se utiliza para transportar datos entre diferentes capas de la aplicación.
+
+  Los Profiles son clases que se utilizan para configurar el autoMapper.
+
+  Para entender como funciona el autoMapper, DTO y Profiles, un ejemplo en terminos de la vida real o un caso de uso, que no es programación, sino que es de la vida real, es el siguiente:
+  Imagina que estás en un concesionario de autos, y quieres comprar un auto.
+  Teniendo en cuenta que el concesionario tiene muchos autos, y que cada auto tiene un precio, un color, una marca, etc.
+  El concesionario tiene un sistema que te permite ver los autos que tiene en venta, pero no puedes ver el precio de los autos, porque el precio es un dato sensible.
+  El autoMapper es el concesionario, el DTO es el auto, y el Profile es la configuración del autoMapper.
+  
+
+  Conclusiones:
+  El autoMapper es un objeto que se encarga de mapear un objeto de un tipo a otro tipo.
+  El DTO es un objeto que se utiliza para transportar datos entre diferentes capas de la aplicación.
+  Los profiles son clases que se utilizan para configurar el autoMapper.
+  
+  La diferencia de la clase PersonaProfile con la clase PersonaDTO es que la clase PersonaProfile se utiliza para mapear un objeto de tipo Persona a un objeto de tipo Cliente, mientras que la clase PersonaDTO se utiliza para transportar datos entre diferentes capas de la aplicación.
+
+  Los controladores en ASP.NET son los encargados de recibir las peticiones HTTP y devolver las respuestas HTTP.
+  Un ejemplo de la vida real es el siguiente: Imagina que tienes una aplicación web que muestra información de personas.
+  Cuando el usuario ingresa a la aplicación web, el navegador envía una petición HTTP al servidor, y el servidor responde con una página web.
+  En este caso, el controlador es el encargado de recibir la petición HTTP y devolver la respuesta HTTP.
+
+  var mascotaDTO = _mapper.Map<MascotaDTO>(mascota); 
+  En breves palabras, el código anterior es el que se encarga de mapear un objeto de tipo Mascota a un objeto de tipo MascotaDTO pero sin la propiedad FechaIngreso, porque en el MascotaDTO no existe la propiedad FechaIngreso.
+
+  var mascotaDTO = _mapper.Map<IEnumerable<MascotaDTO>>(mascota);
+  En breves palabras, es lo mismo que el código anterior, pero en este caso, se mapea una lista de objetos de tipo Mascota a una lista de objetos de tipo MascotaDTO.
+  IEnumerable es una interfaz que se utiliza para representar una colección de objetos.
+  -->
+</body>
+</html>
